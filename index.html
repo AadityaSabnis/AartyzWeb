@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aartyz — Hand Block Printed Indian Textiles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" onclick="closeMob()">✕</button>
+  <a class="mob-link" href="#" onclick="go('home');closeMob()">Home</a>
+  <a class="mob-link" href="#" onclick="go('women');closeMob()">Women's</a>
+  <a class="mob-link" href="#" onclick="go('men');closeMob()">Men's</a>
+  <a class="mob-link" href="#" onclick="go('decor');closeMob()">Home Decor</a>
+  <a class="mob-link" href="#" onclick="go('gifting');closeMob()">Corporate Gifting</a>
+  <a class="mob-link" href="#" onclick="go('newarrivals');closeMob()">New In</a>
+  <a class="mob-link" href="#" onclick="go('sale');closeMob()" style="color:var(--saffron)">Sale</a>
+  <a class="mob-link" href="#" onclick="go('mto');closeMob()">Made to Order</a>
+  <a class="mob-link" href="#" onclick="go('about');closeMob()">Our Story</a>
+  <a class="mob-link" href="#" onclick="go('contact');closeMob()">Contact</a>
+</div>
+
+<!-- NAVIGATION -->
+<nav id="mainNav">
+  <div class="nav-inner wrap" style="max-width:1440px;padding:0 60px">
+    <div class="nav-left" style="display:flex;gap:28px;align-items:center">
+      <div class="nav-item">
+        <a class="nav-link" href="#" onclick="go('women')">Women's</a>
+        <div class="mega-menu" style="min-width:270px">
+          <a class="mega-link" href="#" onclick="go('w-sarees')"><span class="ml-icon">👗</span><span><span class="ml-label">Sarees</span><span class="ml-sub">79 styles · Silk · Cotton · Chanderi</span></span></a>
+          <a class="mega-link" href="#" onclick="go('w-coords')"><span class="ml-icon">✨</span><span><span class="ml-label">Co-ord Sets</span><span class="ml-sub">Summer · Festival · Casual</span></span></a>
+          <a class="mega-link" href="#" onclick="go('w-onepiecedress')"><span class="ml-icon">👘</span><span><span class="ml-label">One Piece Dress</span><span class="ml-sub">Midi · Maxi · Mini</span></span></a>
+          <a class="mega-link" href="#" onclick="go('w-topsshirts')"><span class="ml-icon">👚</span><span><span class="ml-label">Tops &amp; Shirts</span><span class="ml-sub">64 styles · Block Print · Kalamkari</span></span></a>
+          <a class="mega-link" href="#" onclick="go('w-kurtis')"><span class="ml-icon">🥻</span><span><span class="ml-label">Kurtis</span><span class="ml-sub">29 styles · Cotton · Chanderi</span></span></a>
+          <a class="mega-link" href="#" onclick="go('w-palazzo')"><span class="ml-icon">👖</span><span><span class="ml-label">Palazzo &amp; Lowers</span><span class="ml-sub">Wide Leg · Harem · Straight</span></span></a>
+          <a class="mega-link" href="#" onclick="go('w-dupatta')"><span class="ml-icon">🧣</span><span><span class="ml-label">Dupatta</span><span class="ml-sub">84 styles · Silk · Cotton · Jute</span></span></a>
+          <a class="mega-link" href="#" onclick="go('w-skirts')"><span class="ml-icon">👗</span><span><span class="ml-label">Cotton Skirts &amp; Wrap Arounds</span><span class="ml-sub">28 styles · A-Line · Tiered</span></span></a>
+          <a class="mega-link" href="#" onclick="go('w-dressmaterial')"><span class="ml-icon">🪢</span><span><span class="ml-label">Dress Material</span><span class="ml-sub">48 styles · Unstitched Fabric</span></span></a>
+          <a class="mega-link" href="#" onclick="go('w-blouse')"><span class="ml-icon">🪡</span><span><span class="ml-label">Designer Blouse Piece</span><span class="ml-sub">13 styles · Silk · Chanderi</span></span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#" onclick="go('men')">Men's</a>
+        <div class="mega-menu">
+          <a class="mega-link" href="#" onclick="go('m-shirts')"><span class="ml-icon">👔</span><span><span class="ml-label">All Shirts</span><span class="ml-sub">73 styles · Block Print · Kalamkari</span></span></a>
+          <a class="mega-link" href="#" onclick="go('m-blockprint')"><span class="ml-icon">🖨️</span><span><span class="ml-label">Block Print Shirts</span><span class="ml-sub">31 styles · Cotton · Khadi</span></span></a>
+          <a class="mega-link" href="#" onclick="go('m-kalamkari')"><span class="ml-icon">🎨</span><span><span class="ml-label">Kalamkari Shirts</span><span class="ml-sub">8 styles · Handpainted</span></span></a>
+          <a class="mega-link" href="#" onclick="go('m-blazers')"><span class="ml-icon">🥋</span><span><span class="ml-label">Ethnic Blazers</span><span class="ml-sub">5 styles · Festive · Formal</span></span></a>
+          <a class="mega-link" href="#" onclick="go('m-jackets')"><span class="ml-icon">🎽</span><span><span class="ml-label">Modi Jackets &amp; Vest Coats</span><span class="ml-sub">22 styles · Khadi · Silk</span></span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#" onclick="go('decor')">Home Decor</a>
+        <div class="mega-menu">
+          <a class="mega-link" href="#" onclick="go('d-bedsheets')"><span class="ml-icon">🛏</span><span><span class="ml-label">Bedsheets</span><span class="ml-sub">50 styles · Single · Double · King</span></span></a>
+          <a class="mega-link" href="#" onclick="go('d-pillow')"><span class="ml-icon">🪑</span><span><span class="ml-label">Pillow Covers</span><span class="ml-sub">Block Print · Sets</span></span></a>
+          <a class="mega-link" href="#" onclick="go('d-cushion')"><span class="ml-icon">🛋</span><span><span class="ml-label">Cushion Covers</span><span class="ml-sub">40 styles · Sets of 5</span></span></a>
+          <a class="mega-link" href="#" onclick="go('d-dining')"><span class="ml-icon">🍽</span><span><span class="ml-label">Dining Table Covers</span><span class="ml-sub">4, 6 &amp; 8 Seater</span></span></a>
+          <a class="mega-link" href="#" onclick="go('d-tablemats')"><span class="ml-icon">🪴</span><span><span class="ml-label">Table Mats &amp; Runners</span><span class="ml-sub">14 styles · Cotton · Khadi</span></span></a>
+          <a class="mega-link" href="#" onclick="go('d-curtains')"><span class="ml-icon">🪟</span><span><span class="ml-label">Curtains</span><span class="ml-sub">15 styles · Cotton · Sheer</span></span></a>
+          <a class="mega-link" href="#" onclick="go('d-runners')"><span class="ml-icon">🎋</span><span><span class="ml-label">Runners</span><span class="ml-sub">Table · Bed · Hallway</span></span></a>
+        </div>
+      </div>
+    </div>
+    <a class="nav-logo" href="#" onclick="go('home')">a<em>ART</em>yz<span class="logo-sub">Hand Block Printed</span></a>
+    <div class="nav-right">
+      <div class="nav-item">
+        <a class="nav-link" href="#" onclick="go('gifting')">Corporate</a>
+        <div class="mega-menu">
+          <a class="mega-link" href="#" onclick="go('g-minipouch')"><span class="ml-icon">👜</span><span><span class="ml-label">Mini Pouch</span><span class="ml-sub">Drawstring · Zipper · Custom</span></span></a>
+          <a class="mega-link" href="#" onclick="go('g-planter')"><span class="ml-icon">🪴</span><span><span class="ml-label">Planter Covers</span><span class="ml-sub">Block Print · Various Sizes</span></span></a>
+          <a class="mega-link" href="#" onclick="go('g-coasters')"><span class="ml-icon">☕</span><span><span class="ml-label">Fabric Coasters</span><span class="ml-sub">5 styles · Block Print Sets</span></span></a>
+          <a class="mega-link" href="#" onclick="go('mto')"><span class="ml-icon">✏️</span><span><span class="ml-label">Made to Order</span><span class="ml-sub">Fully Customised · Bulk Orders</span></span></a>
+        </div>
+      </div>
+      <a class="nav-link" href="#" onclick="go('newarrivals')">New In</a>
+      <a class="nav-link" href="#" onclick="go('sale')" style="color:var(--saffron)">Sale</a>
+      <button class="nav-icon" title="Search" onclick="go('shop')">🔍</button>
+      <button class="nav-icon" title="Wishlist" onclick="go('wishlist')">♡</button>
+      <button class="nav-icon" title="Cart" style="position:relative" onclick="go('cart')">
+        🛍 <span class="cart-dot" id="cartDot"></span>
+      </button>
+      <button class="hamburger" onclick="openMob()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════════
+     HOME PAGE
+══════════════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+<!-- HERO -->
+<section class="hero" style="margin-top:calc(var(--nav-h) + 38px)">
+  <div class="hero-panel">
+    <p class="hero-kicker">Est. Nagpur · Since 2018</p>
+    <h1 class="hero-h1">
+      <span class="line-normal">Where Ancient</span>
+      <span class="line-italic">Block Print</span>
+      <span class="line-normal">Meets Modern</span>
+      <span class="line-normal">Silhouette.</span>
+    </h1>
+    <p class="hero-desc">Each piece carries the story of skilled hands, earth-born dyes, and centuries-old Indian craft — reimagined for the way you live today.</p>
+    <div class="hero-cta-row">
+      <a class="btn-fill" href="#" onclick="go('shop')"><span>Explore Collection</span></a>
+      <a class="hero-link" href="#" onclick="go('about')">Our Craft →</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">25<em style="font-size:.5em;color:var(--saffron)">+</em></div>
+        <div class="stat-label">Distributors</div>
+      </div>
+      <div>
+        <div class="stat-num">6<em style="font-size:.5em;color:var(--saffron)">yrs</em></div>
+        <div class="stat-label">Of Craft</div>
+      </div>
+      <div>
+        <div class="stat-num">100<em style="font-size:.5em;color:var(--saffron)">%</em></div>
+        <div class="stat-label">Handmade</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-img-main"></div>
+    <div class="hero-img-overlay"></div>
+    <div class="hero-float-card">
+      <div class="hfc-label">New Season</div>
+      <div class="hfc-val">SS'25</div>
+      <div class="hfc-sub">Collection Live Now</div>
+    </div>
+    <div class="hero-tag-pill">
+      <div class="tag-dot"></div>
+      <div class="tag-text">100% Eco-Conscious</div>
+    </div>
+    <div class="hero-vert">Hand Block Printed · Nagpur</div>
+  </div>
+</section>
+
+<!-- MARQUEE BAND -->
+<div class="marquee-band">
+  <div class="marquee-inner">
+    <span class="mi">Hand Block Printing <span class="dot">✦</span></span>
+    <span class="mi">Organic Cotton <span class="dot">✦</span></span>
+    <span class="mi">Women Artisans <span class="dot">✦</span></span>
+    <span class="mi">Bespoke Design <span class="dot">✦</span></span>
+    <span class="mi">Corporate Gifting <span class="dot">✦</span></span>
+    <span class="mi">Made in Nagpur <span class="dot">✦</span></span>
+    <span class="mi">Natural Dyes <span class="dot">✦</span></span>
+    <span class="mi">Kalamkari <span class="dot">✦</span></span>
+    <span class="mi">Hand Block Printing <span class="dot">✦</span></span>
+    <span class="mi">Organic Cotton <span class="dot">✦</span></span>
+    <span class="mi">Women Artisans <span class="dot">✦</span></span>
+    <span class="mi">Bespoke Design <span class="dot">✦</span></span>
+    <span class="mi">Corporate Gifting <span class="dot">✦</span></span>
+    <span class="mi">Made in Nagpur <span class="dot">✦</span></span>
+    <span class="mi">Natural Dyes <span class="dot">✦</span></span>
+    <span class="mi">Kalamkari <span class="dot">✦</span></span>
+  </div>
+</div>
+
+<!-- CATEGORIES -->
+<div class="cats-section">
+  <div class="wrap">
+    <div class="cats-header">
+      <div>
+        <p class="eyebrow">Shop by</p>
+        <h2 class="display-title">Our <em>Collections</em></h2>
+      </div>
+      <a class="btn-fill" href="#" onclick="go('shop')"><span>View All</span></a>
+    </div>
+    <div class="cats-mosaic">
+      <div class="cat-tile" onclick="go('shop')">
+        <img src="https://aartyz.in/wp-content/uploads/2025/07/Gemini_Generated_Image_oz7e9coz7e9coz7e-e1768591810204.png" alt="Women's">
+        <div class="cat-info">
+          <h3 class="cat-name">Women's</h3>
+          <p class="cat-sub">Sarees · Kurtis · Co-ords · Dupattas</p>
+        </div>
+        <div class="cat-btn">↗</div>
+      </div>
+      <div class="cat-tile" onclick="go('shop')">
+        <img src="https://aartyz.in/wp-content/uploads/2025/06/Untitled-design-8.jpeg" alt="Men's">
+        <div class="cat-info">
+          <h3 class="cat-name">Men's</h3>
+          <p class="cat-sub">Shirts · Modi Jackets · Vests</p>
+        </div>
+        <div class="cat-btn">↗</div>
+      </div>
+      <div class="cat-tile" onclick="go('shop')">
+        <img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt="Home Decor">
+        <div class="cat-info">
+          <h3 class="cat-name">Home Decor</h3>
+          <p class="cat-sub">Bedsheets · Cushions · Runners</p>
+        </div>
+        <div class="cat-btn">↗</div>
+      </div>
+      <div class="cat-tile" onclick="go('shop')">
+        <img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_17mesz17mesz17me-e1774193664883-300x300.png" alt="Corporate Gifting">
+        <div class="cat-info">
+          <h3 class="cat-name">Corporate Gifts</h3>
+          <p class="cat-sub">Totes · Pouches · Custom</p>
+        </div>
+        <div class="cat-btn">↗</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURES / USP -->
+<div class="features-section">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--turmeric)">Why Aartyz</p>
+    <h2 class="display-title" style="color:var(--blush)">What Makes Us <em style="color:var(--saffron)">Different</em></h2>
+    <div class="features-grid">
+      <div class="feat-item">
+        <div class="feat-num">01</div>
+        <h3 class="feat-title">Skilled Women Artisans</h3>
+        <p class="feat-text">Our craft is led by women who have honed block printing to extraordinary mastery. Their hands, their stories, their art — in every piece you wear.</p>
+      </div>
+      <div class="feat-item">
+        <div class="feat-num">02</div>
+        <h3 class="feat-title">Bespoke Color Palettes</h3>
+        <p class="feat-text">We celebrate our signatures, yet we are always ready to create your personal color story. No two pieces need to be alike — that is the point.</p>
+      </div>
+      <div class="feat-item">
+        <div class="feat-num">03</div>
+        <h3 class="feat-title">Modern Silhouettes</h3>
+        <p class="feat-text">Traditional fabrics, contemporary cuts. Our designs move seamlessly from morning puja to evening dinner, from Zoom calls to summer weddings.</p>
+      </div>
+      <div class="feat-item">
+        <div class="feat-num">04</div>
+        <h3 class="feat-title">3-Level Quality Check</h3>
+        <p class="feat-text">Every single product passes three rigorous scrutiny rounds before dispatch. We never compromise on the quality that our artisans pour their soul into.</p>
+      </div>
+      <div class="feat-item">
+        <div class="feat-num">05</div>
+        <h3 class="feat-title">Eco-Conscious Process</h3>
+        <p class="feat-text">Natural dyes, organic fabrics, minimal waste. Sustainability is not a trend for us — it is embedded in how block printing has always been done.</p>
+      </div>
+      <div class="feat-item">
+        <div class="feat-num">06</div>
+        <h3 class="feat-title">25+ Repeat Distributors</h3>
+        <p class="feat-text">Our network chooses us again and again — because quality speaks. When customers reorder, it is the highest review we could ever receive.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NEW ARRIVALS -->
+<div class="products-section">
+  <div class="wrap">
+    <div class="products-header">
+      <div>
+        <p class="eyebrow">Just Dropped</p>
+        <h2 class="display-title">New <em>Arrivals</em></h2>
+      </div>
+      <div class="filter-tabs">
+        <button class="filter-tab active">All</button>
+        <button class="filter-tab">Women's</button>
+        <button class="filter-tab">Men's</button>
+        <button class="filter-tab">Decor</button>
+      </div>
+    </div>
+    <div class="prod-grid">
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://aartyz.in/wp-content/uploads/2026/04/1.png" alt="">
+          <div class="prod-badge badge-new">New</div>
+          <button class="prod-wish">♡</button>
+          <div class="prod-img-hover">
+            <button class="prod-add-btn" onclick="addCart()">Add to Cart</button>
+          </div>
+        </div>
+        <div class="prod-meta">
+          <div class="prod-cat">Women's · Dress Material</div>
+          <div class="prod-name">Maroon Floral Block Print</div>
+          <div class="prod-price-row"><span class="prod-price">₹2,550</span></div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://aartyz.in/wp-content/uploads/2026/03/8.png" alt="">
+          <div class="prod-badge badge-new">New</div>
+          <button class="prod-wish">♡</button>
+          <div class="prod-img-hover">
+            <button class="prod-add-btn" onclick="addCart()">Add to Cart</button>
+          </div>
+        </div>
+        <div class="prod-meta">
+          <div class="prod-cat">Women's · Dress Material</div>
+          <div class="prod-name">Green Khadi Tulip</div>
+          <div class="prod-price-row"><span class="prod-price">₹1,650</span></div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-04_14_30-PM.png" alt="">
+          <div class="prod-badge badge-sale">Sale</div>
+          <button class="prod-wish">♡</button>
+          <div class="prod-img-hover">
+            <button class="prod-add-btn" onclick="addCart()">Add to Cart</button>
+          </div>
+        </div>
+        <div class="prod-meta">
+          <div class="prod-cat">Men's · Shirts</div>
+          <div class="prod-name">Kalamkari Block Shirt</div>
+          <div class="prod-price-row">
+            <span class="prod-original">₹2,200</span>
+            <span class="prod-sale">₹1,760</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://aartyz.in/wp-content/uploads/2025/11/1.jpg" alt="">
+          <div class="prod-badge badge-new">New</div>
+          <button class="prod-wish">♡</button>
+          <div class="prod-img-hover">
+            <button class="prod-add-btn" onclick="addCart()">Add to Cart</button>
+          </div>
+        </div>
+        <div class="prod-meta">
+          <div class="prod-cat">Home Decor · Set</div>
+          <div class="prod-name">Sanctuary Artisan Bedsheet</div>
+          <div class="prod-price-row"><span class="prod-price">₹2,850</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STORY SECTION -->
+<div class="story-section">
+  <div class="story-media">
+    <video autoplay muted loop playsinline class="story-video">
+      <source src="https://aartyz.in/wp-content/uploads/2023/10/11.mp4" type="video/mp4">
+    </video>
+    <div class="story-media-overlay"></div>
+  </div>
+  <div class="story-copy">
+    <p class="eyebrow">Our Heritage</p>
+    <h2 class="display-title">Craft rooted in<br><em>centuries of tradition</em></h2>
+    <p class="story-p" style="margin-top:28px">Aartyz was born in Nagpur from a profound love for India's handcrafted textile heritage. Founded by Aarti Sabnis, every collection we release is a conversation between ancient technique and modern sensibility.</p>
+    <div class="pull-quote">
+      <p>"We do not just make clothing — we preserve a language that has been spoken through cloth for thousands of years."</p>
+    </div>
+    <p class="story-p">Our artisans — predominantly skilled women — bring decades of mastery to every wooden block and every impression. Three levels of quality scrutiny ensure only perfection leaves our factory.</p>
+    <div class="story-num-row">
+      <div><div class="s-num-val">25+</div><div class="s-num-label">Distributors</div></div>
+      <div><div class="s-num-val">6+</div><div class="s-num-label">Years</div></div>
+      <div><div class="s-num-val">∞</div><div class="s-num-label">Stories Told</div></div>
+    </div>
+    <a class="btn-fill" href="#" onclick="go('about')" style="margin-top:40px;display:inline-block"><span>Read Full Story</span></a>
+  </div>
+</div>
+
+<!-- PROCESS -->
+<div class="process-section">
+  <div class="wrap">
+    <div style="text-align:center">
+      <p class="eyebrow" style="justify-content:center">How It's Made</p>
+      <h2 class="display-title">The Aartyz <em>Process</em></h2>
+    </div>
+    <div class="process-steps">
+      <div class="p-step">
+        <div class="p-step-bubble"><div class="p-step-icon">🌿</div><div class="p-step-n">01</div></div>
+        <h4 class="p-step-title">Fabric Sourcing</h4>
+        <p class="p-step-text">Premium cotton, chanderi, silk & khadi sourced from trusted mills for comfort and longevity.</p>
+      </div>
+      <div class="p-step">
+        <div class="p-step-bubble"><div class="p-step-icon">🪵</div><div class="p-step-n">02</div></div>
+        <h4 class="p-step-title">Block Carving</h4>
+        <p class="p-step-text">Master craftsmen hand-carve intricate wooden blocks, a skill passed through generations.</p>
+      </div>
+      <div class="p-step">
+        <div class="p-step-bubble"><div class="p-step-icon">🎨</div><div class="p-step-n">03</div></div>
+        <h4 class="p-step-title">Natural Dyeing</h4>
+        <p class="p-step-text">Earth-born dyes are hand-mixed for our signature palette — vivid, sustainable, alive.</p>
+      </div>
+      <div class="p-step">
+        <div class="p-step-bubble"><div class="p-step-icon">🤲</div><div class="p-step-n">04</div></div>
+        <h4 class="p-step-title">Hand Printing</h4>
+        <p class="p-step-text">Artisans press each block by hand, giving every piece a soul that machines cannot replicate.</p>
+      </div>
+      <div class="p-step">
+        <div class="p-step-bubble"><div class="p-step-icon">✨</div><div class="p-step-n">05</div></div>
+        <h4 class="p-step-title">Quality & Care</h4>
+        <p class="p-step-text">Three scrutiny rounds. Only perfection leaves Nagpur — guaranteed to reach you that way.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<div class="testi-section">
+  <div class="wrap">
+    <div style="text-align:center">
+      <p class="eyebrow" style="justify-content:center">Customer Love</p>
+      <h2 class="display-title">What Our Community <em>Says</em></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"The block print on my kurti is exceptional. You can feel the craftsmanship in every stitch. Four orders in — and every single one has been flawless."</p>
+        <div class="testi-by">Priya Mehta</div>
+        <div class="testi-loc">Mumbai</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Ordered 200 branded tote bags for our team. The customisation was impeccable, delivery was ahead of schedule, and every colleague loved them."</p>
+        <div class="testi-by">Rohan Desai</div>
+        <div class="testi-loc">Pune · Corporate Client</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"I bought the kalamkari shirt for my husband and he refuses to take it off. The fit, the print, the fabric — everything tells you this brand truly values its craft."</p>
+        <div class="testi-by">Anita Sharma</div>
+        <div class="testi-loc">Delhi</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- INSTAGRAM WALL -->
+<div class="insta-section">
+  <div class="insta-header">
+    <p class="eyebrow" style="justify-content:center">@aartyz_</p>
+    <h2 class="display-title">Follow Our <em>Journey</em></h2>
+  </div>
+  <div class="insta-wall">
+    <div class="insta-cell"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80" alt=""><div class="insta-overlay"><div class="insta-icon">📷</div><div class="insta-label">View Post</div></div></div>
+    <div class="insta-cell"><img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=400&q=80" alt=""><div class="insta-overlay"><div class="insta-icon">📷</div><div class="insta-label">View Post</div></div></div>
+    <div class="insta-cell"><img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&q=80" alt=""><div class="insta-overlay"><div class="insta-icon">📷</div><div class="insta-label">View Post</div></div></div>
+    <div class="insta-cell"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" alt=""><div class="insta-overlay"><div class="insta-icon">📷</div><div class="insta-label">View Post</div></div></div>
+    <div class="insta-cell"><img src="https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=400&q=80" alt=""><div class="insta-overlay"><div class="insta-icon">📷</div><div class="insta-label">View Post</div></div></div>
+    <div class="insta-cell"><img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=400&q=80" alt=""><div class="insta-overlay"><div class="insta-icon">📷</div><div class="insta-label">View Post</div></div></div>
+    <div class="insta-cell"><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=400&q=80" alt=""><div class="insta-overlay"><div class="insta-icon">📷</div><div class="insta-label">View Post</div></div></div>
+  </div>
+</div>
+
+<!-- NEWSLETTER -->
+<div class="newsletter-section">
+  <div class="newsletter-inner">
+    <p class="eyebrow" style="justify-content:center;color:var(--turmeric)">Stay Connected</p>
+    <h2 class="display-title" style="color:var(--blush)">Early Access &<br><em style="color:var(--saffron)">Exclusive Drops</em></h2>
+    <p class="newsletter-sub">Join 12,000+ patrons of Indian craft. New arrivals, behind-the-scenes stories, and member offers — delivered thoughtfully.</p>
+    <div class="nl-form">
+      <input class="nl-input" type="email" placeholder="Your email address">
+      <button class="nl-btn">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+</div><!-- /home -->
+
+
+<!-- ══════════════════════════════════════════
+     SHOP PAGE
+══════════════════════════════════════════ -->
+<div class="page" id="page-shop">
+  <div class="shop-banner" >
+    <div class="shop-banner-inner">
+      <div class="breadcrumb"><a href="#" onclick="go('home')">Home</a> / Shop</div>
+      <h1 class="display-title" style="color:#fff">All <em style="color:var(--turmeric)">Collections</em></h1>
+    </div>
+  </div>
+  <div class="shop-body">
+    <div class="sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group">
+        <div class="filter-group-title">Category</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Women's</span><span class="filter-option-count">86</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Men's</span><span class="filter-option-count">24</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Home Decor</span><span class="filter-option-count">32</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Corporate Gifting</span><span class="filter-option-count">18</span></label>
+      </div>
+      <div class="filter-group">
+        <div class="filter-group-title">Fabric</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Cotton</span><span class="filter-option-count">52</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Chanderi</span><span class="filter-option-count">28</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Silk</span><span class="filter-option-count">16</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Khadi</span><span class="filter-option-count">22</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Jute Silk</span><span class="filter-option-count">12</span></label>
+      </div>
+      <div class="filter-group">
+        <div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Under ₹1,000</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹1,000 – ₹2,000</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹2,000 – ₹3,500</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹3,500</span></label>
+      </div>
+    </div>
+    <div class="shop-main">
+      <div class="shop-topbar">
+        <span class="ps-count shop-count-text">160 products</span>
+        <select class="ps-sort sort-box">
+          <option>Newest First</option>
+          <option>Price: Low → High</option>
+          <option>Price: High → Low</option>
+          <option>Best Selling</option>
+        </select>
+      </div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&q=80" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Women's · Saree</div><div class="prod-name">Indigo Block Print Saree</div><div class="prod-price-row"><span class="prod-price">₹3,400</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=500&q=80" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Women's · Kurti</div><div class="prod-name">Front Cut Cotton Kurti</div><div class="prod-price-row"><span class="prod-original">₹1,200</span><span class="prod-sale">₹750</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=500&q=80" alt=""><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div><button class="prod-wish">♡</button></div><div class="prod-meta"><div class="prod-cat">Men's · Shirt</div><div class="prod-name">Kalamkari Handblock Shirt</div><div class="prod-price-row"><span class="prod-price">₹1,850</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=500&q=80" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Women's · Dupatta</div><div class="prod-name">Silk Dupatta — Rust</div><div class="prod-price-row"><span class="prod-price">₹550</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=500&q=80" alt=""><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div><button class="prod-wish">♡</button></div><div class="prod-meta"><div class="prod-cat">Home Decor · Bedsheet</div><div class="prod-name">Heritage Block Bedsheet</div><div class="prod-price-row"><span class="prod-price">₹2,100</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=500&q=80" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Corporate · Tote</div><div class="prod-name">Block Print Tote Bag</div><div class="prod-price-row"><span class="prod-price">₹480</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80" alt=""><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div><button class="prod-wish">♡</button></div><div class="prod-meta"><div class="prod-cat">Women's · Co-ord Set</div><div class="prod-name">Floral Co-ord Set</div><div class="prod-price-row"><span class="prod-price">₹2,800</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=500&q=80" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Men's · Modi Jacket</div><div class="prod-name">Block Print Modi Jacket</div><div class="prod-price-row"><span class="prod-original">₹3,200</span><span class="prod-sale">₹2,560</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div><!-- /shop -->
+
+
+<!-- ══════════════════════════════════════════
+     ABOUT PAGE
+══════════════════════════════════════════ -->
+<div class="page" id="page-about">
+  <div class="about-hero-full" >
+    <div class="about-hero-text wrap">
+      <p class="eyebrow" style="color:var(--turmeric)">Est. Nagpur · 2018</p>
+      <h1 class="display-title" style="color:#fff">The story of craft,<br><em style="color:var(--turmeric)">color & community</em></h1>
+    </div>
+  </div>
+
+  <div class="about-split">
+    <div class="about-img-col">
+      <img src="https://aartyz.in/wp-content/uploads/2023/10/1-3.jpg" alt="Artisan at work">
+    </div>
+    <div class="about-text-col">
+      <p class="eyebrow">Our Beginning</p>
+      <h2 class="display-title">Born from a love<br>of Indian <em>craft</em></h2>
+      <p class="story-p" style="margin-top:28px">Aartyz was founded by Aarti Sabnis in Nagpur with one powerful belief: India's textile heritage deserves a modern platform. What started as a small workshop fueled by passion has grown into a nationally recognized brand.</p>
+      <p class="story-p">We work hand-in-hand with women artisans who have dedicated their lives to block printing. Every piece carries their story — their precision, their creativity, their legacy.</p>
+      <a class="btn-fill" href="#" onclick="go('contact')" style="margin-top:32px;display:inline-block"><span>Partner With Us</span></a>
+    </div>
+  </div>
+
+  <div class="values-section">
+    <div class="wrap">
+      <div style="text-align:center;margin-bottom:0">
+        <p class="eyebrow" style="justify-content:center">What We Stand For</p>
+        <h2 class="display-title">Our <em>Values</em></h2>
+      </div>
+      <div class="values-grid" style="margin-top:64px">
+        <div class="value-item">
+          <div class="value-icon">🌱</div>
+          <h3 class="value-title">Sustainability</h3>
+          <p class="value-text">Eco-conscious dyes, natural fabrics, and waste-minimal processes are not add-ons — they are the foundation of how block printing has always worked.</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">👐</div>
+          <h3 class="value-title">Empowerment</h3>
+          <p class="value-text">Our artisans — predominantly women — are paid fairly, work in dignified conditions, and grow their craft alongside our brand every season.</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">🏺</div>
+          <h3 class="value-title">Preservation</h3>
+          <p class="value-text">Block print is a language. We are committed to keeping it alive, relevant, and celebrated — passing it forward in every collection we release.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="founder-section">
+    <div class="wrap">
+      <div class="founder-inner">
+        <div class="founder-photo">
+          <img src="https://aartyz.in/wp-content/uploads/2023/05/aarti-pic-e1698682431799.jpg" alt="Aarti Sabnis">
+        </div>
+        <div>
+          <p class="eyebrow">The Founder</p>
+          <h2 class="founder-name-big">Aarti Sabnis</h2>
+          <p class="founder-role-text">Founder & Creative Director</p>
+          <div class="pull-quote">
+            <p>"Every block print is a conversation between the artisan and the wearer — a thread of culture that connects us across time. Aartyz exists to make that connection louder."</p>
+          </div>
+          <p class="story-p">Aarti has built Aartyz from the ground up, combining her deep reverence for Indian craft with a sharp eye for contemporary design. She leads every collection with the belief that the most beautiful fashion is also the most honest.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /about -->
+
+
+<!-- ══════════════════════════════════════════
+     CONTACT PAGE
+══════════════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <div class="contact-split" >
+    <div class="contact-left">
+      <p class="eyebrow" style="color:var(--turmeric)">Say Hello</p>
+      <h2 class="display-title" style="color:var(--blush)">Let's Create<br><em style="color:var(--saffron)">Something Beautiful</em></h2>
+      <div class="contact-detail-group">
+        <div class="cdg-label">Office & Factory Outlet</div>
+        <div class="cdg-val">Plot No. 2, Layout No. 3, Ujjwal Nagar<br>Somalwada, Wardha Road<br>Nagpur – 440025, Maharashtra</div>
+      </div>
+      <div class="contact-detail-group">
+        <div class="cdg-label">WhatsApp</div>
+        <div class="cdg-val">+91 94228 66082</div>
+      </div>
+      <div class="contact-detail-group">
+        <div class="cdg-label">Email</div>
+        <div class="cdg-val">hello@aartyz.in</div>
+      </div>
+      <div class="contact-detail-group">
+        <div class="cdg-label">Hours</div>
+        <div class="cdg-val">Monday – Saturday · 10AM – 6PM IST</div>
+      </div>
+      <div style="display:flex;gap:10px;margin-top:48px">
+        <a class="soc-btn" href="#">f</a>
+        <a class="soc-btn" href="#">✦</a>
+        <a class="soc-btn" href="#">📌</a>
+        <a class="soc-btn" href="#">▶</a>
+      </div>
+    </div>
+    <div class="contact-right">
+      <p class="eyebrow">Get in Touch</p>
+      <h2 class="display-title">Send a <em>Message</em></h2>
+      <div style="margin-top:36px">
+        <div class="form-row">
+          <div class="form-group"><label>First Name</label><input type="text" placeholder="Priya"></div>
+          <div class="form-group"><label>Last Name</label><input type="text" placeholder="Sharma"></div>
+        </div>
+        <div class="form-group"><label>Email</label><input type="email" placeholder="you@example.com"></div>
+        <div class="form-group"><label>Phone</label><input type="tel" placeholder="+91 98765 43210"></div>
+        <div class="form-group">
+          <label>Subject</label>
+          <select>
+            <option>General Enquiry</option>
+            <option>Corporate Gifting</option>
+            <option>Bulk / Wholesale</option>
+            <option>Made to Order</option>
+            <option>Partnership</option>
+            <option>Returns & Refunds</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Message</label><textarea placeholder="Tell us how we can help..."></textarea></div>
+        <button class="btn-submit" onclick="alert('Thank you! We will be in touch within 24 hours.')"><span>Send Message →</span></button>
+      </div>
+    </div>
+  </div>
+</div><!-- /contact -->
+
+
+<!-- ═══════════ WOMEN'S LANDING ═══════════ -->
+<div class="page" id="page-women">
+  <div class="section-hero">
+    <div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png')"></div>
+    <div class="section-hero-content wrap">
+      <p class="eyebrow">For Her</p>
+      <h1 class="display-title" style="color:#fff">Women's <em style="color:var(--turmeric)">Collection</em></h1>
+      <p class="hero-desc">460+ hand block printed Indian wear across 10 categories — made with love in Nagpur.</p>
+    </div>
+  </div>
+  <div style="background:var(--blush);padding:80px 0">
+    <div class="wrap">
+      <p class="eyebrow">Browse Women's</p>
+      <h2 class="display-title" style="margin-bottom:48px">Shop by <em>Category</em></h2>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('w-sarees')"><img src="https://aartyz.in/wp-content/uploads/2025/07/Gemini_Generated_Image_oz7e9coz7e9coz7e-e1768591810204.png" alt="Sarees"><div class="cat-info"><h3 class="cat-name" style="font-size:22px">Sarees</h3><p class="cat-sub">79 styles · Silk · Cotton · Chanderi</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('w-coords')"><img src="https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png" alt="Co-ords"><div class="cat-info"><h3 class="cat-name" style="font-size:22px">Co-ord Sets</h3><p class="cat-sub">Festival · Casual · Summer</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('w-onepiecedress')"><img src="https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png" alt="Dress"><div class="cat-info"><h3 class="cat-name" style="font-size:22px">One Piece Dress</h3><p class="cat-sub">Midi · Maxi · Festive</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('w-topsshirts')"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-23-2026-11_12_52-AM-1300x867.png" alt="Tops"><div class="cat-info"><h3 class="cat-name" style="font-size:22px">Tops &amp; Shirts</h3><p class="cat-sub">64 styles · Block Print</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('w-kurtis')"><img src="https://aartyz.in/wp-content/uploads/2023/05/36-768x768-1.jpg" alt="Kurtis"><div class="cat-info"><h3 class="cat-name" style="font-size:22px">Kurtis</h3><p class="cat-sub">29 styles · Cotton · Chanderi</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('w-palazzo')"><img src="https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png" alt="Palazzo"><div class="cat-info"><h3 class="cat-name" style="font-size:22px">Palazzo &amp; Lowers</h3><p class="cat-sub">Wide Leg · Harem · Straight</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('w-dupatta')"><img src="https://aartyz.in/wp-content/uploads/2023/05/11-768x768-1.png" alt="Dupatta"><div class="cat-info"><h3 class="cat-name" style="font-size:22px">Dupatta</h3><p class="cat-sub">84 styles · Silk · Cotton · Jute</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('w-skirts')"><img src="https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png" alt="Skirts"><div class="cat-info"><h3 class="cat-name" style="font-size:22px">Cotton Skirts &amp; Wrap Arounds</h3><p class="cat-sub">28 styles · A-Line · Tiered</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('w-dressmaterial')"><img src="https://aartyz.in/wp-content/uploads/2026/04/1.png" alt="Dress Material"><div class="cat-info"><h3 class="cat-name" style="font-size:22px">Dress Material</h3><p class="cat-sub">48 styles · Unstitched Fabric</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('w-blouse')"><img src="https://aartyz.in/wp-content/uploads/2023/05/11-768x768-1.png" alt="Blouse"><div class="cat-info"><h3 class="cat-name" style="font-size:22px">Designer Blouse Piece</h3><p class="cat-sub">13 styles · Silk · Chanderi</p></div><div class="cat-btn">↗</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── PRODUCT PAGE TEMPLATE (shared structure) ─── -->
+
+<!-- WOMEN > SAREES (79 products) -->
+<div class="page" id="page-w-sarees">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2025/07/Gemini_Generated_Image_oz7e9coz7e9coz7e-e1768591810204.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('women')" style="color:inherit;text-decoration:none">Women's</a> / Sarees</p><h1 class="display-title" style="color:#fff">Sarees</h1><p class="hero-desc">79 styles — silk, cotton &amp; chanderi sarees with exquisite hand block prints.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Fabric</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Silk</span><span class="filter-option-count">22</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Cotton</span><span class="filter-option-count">28</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Chanderi</span><span class="filter-option-count">18</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Khadi</span><span class="filter-option-count">11</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Occasion</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Casual</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Festive</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Wedding</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Office</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹850 – ₹1,200</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹1,300 – ₹1,700</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹1,800 – ₹2,500</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹2,500</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Print</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Floral</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Geometric</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Kalamkari</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Paisley</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Ikat</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('women')" style="color:var(--muted);text-decoration:none">Women's</a> / Sarees</span><div class="ps-count" style="margin-top:4px">Showing 79 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option><option>Price: High → Low</option><option>Best Selling</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/07/Gemini_Generated_Image_oz7e9coz7e9coz7e-e1768591810204.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Saree · Silk</div><div class="prod-name">Indigo Floral Silk Saree</div><div class="prod-price-row"><span class="prod-price">₹3,800</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Saree · Cotton</div><div class="prod-name">Rust Kalamkari Cotton Saree</div><div class="prod-price-row"><span class="prod-price">₹2,400</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2023/05/11-768x768-1.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Saree · Chanderi</div><div class="prod-name">Saffron Chanderi Block Saree</div><div class="prod-price-row"><span class="prod-original">₹4,200</span><span class="prod-sale">₹3,360</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/07/Gemini_Generated_Image_oz7e9coz7e9coz7e-e1768591810204.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Saree · Khadi</div><div class="prod-name">Paisley Khadi Saree</div><div class="prod-price-row"><span class="prod-price">₹2,850</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Saree · Silk</div><div class="prod-name">Teal Geometric Silk Saree</div><div class="prod-price-row"><span class="prod-price">₹4,500</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2023/05/11-768x768-1.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Saree · Cotton</div><div class="prod-name">Mustard Floral Cotton Saree</div><div class="prod-price-row"><span class="prod-price">₹1,950</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/07/Gemini_Generated_Image_oz7e9coz7e9coz7e-e1768591810204.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Saree · Chanderi</div><div class="prod-name">Rose Pink Chanderi Saree</div><div class="prod-price-row"><span class="prod-price">₹3,400</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Saree · Cotton</div><div class="prod-name">Navy Buta Print Saree</div><div class="prod-price-row"><span class="prod-original">₹3,000</span><span class="prod-sale">₹2,400</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WOMEN > CO-ORD SETS -->
+<div class="page" id="page-w-coords">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('women')" style="color:inherit;text-decoration:none">Women's</a> / Co-ord Sets</p><h1 class="display-title" style="color:#fff">Co-ord Sets</h1><p class="hero-desc">Effortlessly put-together — matching block print sets for every mood and occasion.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Fabric</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Cotton</span><span class="filter-option-count">10</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Chanderi</span><span class="filter-option-count">6</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Khadi</span><span class="filter-option-count">4</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Style</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Kurta + Palazzo</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Top + Skirt</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Top + Pants</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Shirt + Skirt</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹1,500 – ₹2,500</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹2,500 – ₹4,000</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹4,000</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('women')" style="color:var(--muted);text-decoration:none">Women's</a> / Co-ord Sets</span><div class="ps-count" style="margin-top:4px">20 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option><option>Price: High → Low</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Co-ord · Cotton</div><div class="prod-name">Floral Summer Co-ord Set</div><div class="prod-price-row"><span class="prod-price">₹2,800</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/07/Gemini_Generated_Image_oz7e9coz7e9coz7e-e1768591810204.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Co-ord · Chanderi</div><div class="prod-name">Indigo Chanderi Co-ord</div><div class="prod-price-row"><span class="prod-price">₹3,600</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-23-2026-11_12_52-AM-1300x867.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Co-ord · Khadi</div><div class="prod-name">Rust Geometric Co-ord Set</div><div class="prod-price-row"><span class="prod-original">₹3,200</span><span class="prod-sale">₹2,560</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Co-ord · Cotton</div><div class="prod-name">Teal Buta Co-ord Set</div><div class="prod-price-row"><span class="prod-price">₹2,400</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/07/Gemini_Generated_Image_oz7e9coz7e9coz7e-e1768591810204.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Co-ord · Chanderi</div><div class="prod-name">Rose Pink Festival Co-ord</div><div class="prod-price-row"><span class="prod-price">₹4,200</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-23-2026-11_12_52-AM-1300x867.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Co-ord · Cotton</div><div class="prod-name">Mustard Paisley Co-ord</div><div class="prod-price-row"><span class="prod-price">₹2,650</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WOMEN > ONE PIECE DRESS -->
+<div class="page" id="page-w-onepiecedress">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('women')" style="color:inherit;text-decoration:none">Women's</a> / One Piece Dress</p><h1 class="display-title" style="color:#fff">One Piece Dress</h1><p class="hero-desc">Block printed dresses — midi, maxi and mini silhouettes for every occasion.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Fabric</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Cotton</span><span class="filter-option-count">14</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Chanderi</span><span class="filter-option-count">6</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Silk</span><span class="filter-option-count">4</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Length</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Mini</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Midi</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Maxi</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Under ₹1,500</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹1,500 – ₹3,000</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹3,000</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('women')" style="color:var(--muted);text-decoration:none">Women's</a> / One Piece Dress</span><div class="ps-count" style="margin-top:4px">24 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dress · Cotton · Midi</div><div class="prod-name">Indigo Floral Midi Dress</div><div class="prod-price-row"><span class="prod-price">₹2,200</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/07/Gemini_Generated_Image_oz7e9coz7e9coz7e-e1768591810204.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dress · Chanderi · Maxi</div><div class="prod-name">Saffron Chanderi Maxi Dress</div><div class="prod-price-row"><span class="prod-price">₹3,100</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-23-2026-11_12_52-AM-1300x867.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dress · Cotton · Midi</div><div class="prod-name">Rust Buta Midi Dress</div><div class="prod-price-row"><span class="prod-original">₹2,400</span><span class="prod-sale">₹1,920</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dress · Silk · Maxi</div><div class="prod-name">Teal Silk Maxi Dress</div><div class="prod-price-row"><span class="prod-price">₹4,200</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/07/Gemini_Generated_Image_oz7e9coz7e9coz7e-e1768591810204.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dress · Cotton · Mini</div><div class="prod-name">Floral Mini Block Dress</div><div class="prod-price-row"><span class="prod-price">₹1,650</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-23-2026-11_12_52-AM-1300x867.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dress · Chanderi · Midi</div><div class="prod-name">Pastel Chanderi Dress</div><div class="prod-price-row"><span class="prod-price">₹2,800</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WOMEN > TOPS & SHIRTS (64 products) -->
+<div class="page" id="page-w-topsshirts">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-23-2026-11_12_52-AM-1300x867.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('women')" style="color:inherit;text-decoration:none">Women's</a> / Tops &amp; Shirts</p><h1 class="display-title" style="color:#fff">Tops &amp; Shirts</h1><p class="hero-desc">64 styles — block printed tops and shirts to style any way you like.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Type</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Crop Top</span><span class="filter-option-count">18</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Shirt</span><span class="filter-option-count">22</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Tunic</span><span class="filter-option-count">14</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Tank Top</span><span class="filter-option-count">10</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Fabric</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Cotton</span><span class="filter-option-count">38</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Khadi</span><span class="filter-option-count">16</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Linen</span><span class="filter-option-count">10</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Under ₹1,000</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹1,000 – ₹2,000</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹2,000</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('women')" style="color:var(--muted);text-decoration:none">Women's</a> / Tops &amp; Shirts</span><div class="ps-count" style="margin-top:4px">64 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option><option>Price: High → Low</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-23-2026-11_12_52-AM-1300x867.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Shirt · Cotton</div><div class="prod-name">Floral Block Print Shirt</div><div class="prod-price-row"><span class="prod-price">₹1,200</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Crop Top · Cotton</div><div class="prod-name">Indigo Crop Top</div><div class="prod-price-row"><span class="prod-price">₹850</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/07/Gemini_Generated_Image_oz7e9coz7e9coz7e-e1768591810204.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Tunic · Khadi</div><div class="prod-name">Rust Kalamkari Tunic</div><div class="prod-price-row"><span class="prod-original">₹1,600</span><span class="prod-sale">₹1,280</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-23-2026-11_12_52-AM-1300x867.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Shirt · Cotton</div><div class="prod-name">Teal Geometric Shirt</div><div class="prod-price-row"><span class="prod-price">₹1,350</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Crop Top · Linen</div><div class="prod-name">Paisley Linen Crop Top</div><div class="prod-price-row"><span class="prod-price">₹950</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/07/Gemini_Generated_Image_oz7e9coz7e9coz7e-e1768591810204.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Tank Top · Cotton</div><div class="prod-name">Mustard Block Print Tank</div><div class="prod-price-row"><span class="prod-price">₹780</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WOMEN > KURTIS (29 products) -->
+<div class="page" id="page-w-kurtis">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2023/05/36-768x768-1.jpg')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('women')" style="color:inherit;text-decoration:none">Women's</a> / Kurtis</p><h1 class="display-title" style="color:#fff">Kurtis</h1><p class="hero-desc">29 styles — from everyday cotton to festive chanderi. Starting ₹750.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Fabric</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Cotton</span><span class="filter-option-count">14</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Chanderi</span><span class="filter-option-count">8</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Khadi</span><span class="filter-option-count">5</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Silk</span><span class="filter-option-count">2</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Length</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Short (up to 40")</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Midi (40"–46")</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Long (46"+)</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Under ₹1,000</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹1,000 – ₹2,000</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹2,000 – ₹3,500</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('women')" style="color:var(--muted);text-decoration:none">Women's</a> / Kurtis</span><div class="ps-count" style="margin-top:4px">29 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option><option>Price: High → Low</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2023/05/36-768x768-1.jpg" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Kurti · Cotton</div><div class="prod-name">Front Cut Kurti</div><div class="prod-price-row"><span class="prod-original">₹1,100</span><span class="prod-sale">₹750</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/04/1.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Kurti · Chanderi</div><div class="prod-name">Maroon Floral Print Kurti</div><div class="prod-price-row"><span class="prod-price">₹2,550</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/8.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Kurti · Khadi</div><div class="prod-name">Green Khadi Tulip Kurti</div><div class="prod-price-row"><span class="prod-price">₹1,650</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2023/05/36-768x768-1.jpg" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Kurti · Cotton</div><div class="prod-name">Indigo A-Line Kurti</div><div class="prod-price-row"><span class="prod-price">₹1,350</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/04/1.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Kurti · Chanderi</div><div class="prod-name">Yellow Floral Dress Material</div><div class="prod-price-row"><span class="prod-price">₹2,550</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/04/1.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Kurti · Chanderi</div><div class="prod-name">Grey Chanderi Dress Material</div><div class="prod-price-row"><span class="prod-price">₹2,050</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/04/1.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Kurti · Chanderi</div><div class="prod-name">Pastel Pink Floral Kurti</div><div class="prod-price-row"><span class="prod-price">₹2,550</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/04/1.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Kurti · Chanderi</div><div class="prod-name">Allover Print Dress Material</div><div class="prod-price-row"><span class="prod-price">₹2,550</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WOMEN > PALAZZO & LOWERS -->
+<div class="page" id="page-w-palazzo">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('women')" style="color:inherit;text-decoration:none">Women's</a> / Palazzo &amp; Lowers</p><h1 class="display-title" style="color:#fff">Palazzo &amp; Lowers</h1><p class="hero-desc">Relaxed, breezy and beautifully printed — for all-day comfort.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Style</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Wide Leg Palazzo</span><span class="filter-option-count">10</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Straight Pants</span><span class="filter-option-count">6</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Harem Pants</span><span class="filter-option-count">4</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Fabric</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Cotton</span><span class="filter-option-count">12</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Chanderi</span><span class="filter-option-count">8</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Under ₹800</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹800 – ₹1,500</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹1,500</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('women')" style="color:var(--muted);text-decoration:none">Women's</a> / Palazzo &amp; Lowers</span><div class="ps-count" style="margin-top:4px">20 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Palazzo · Cotton</div><div class="prod-name">Indigo Wide Leg Palazzo</div><div class="prod-price-row"><span class="prod-price">₹1,100</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/07/Gemini_Generated_Image_oz7e9coz7e9coz7e-e1768591810204.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Palazzo · Chanderi</div><div class="prod-name">Rust Floral Chanderi Palazzo</div><div class="prod-price-row"><span class="prod-price">₹1,400</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-23-2026-11_12_52-AM-1300x867.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Palazzo · Cotton</div><div class="prod-name">Teal Geometric Palazzo</div><div class="prod-price-row"><span class="prod-original">₹1,200</span><span class="prod-sale">₹960</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Harem Pants · Cotton</div><div class="prod-name">Paisley Harem Pants</div><div class="prod-price-row"><span class="prod-price">₹950</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WOMEN > DUPATTA (84 products) -->
+<div class="page" id="page-w-dupatta">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2023/05/11-768x768-1.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('women')" style="color:inherit;text-decoration:none">Women's</a> / Dupatta</p><h1 class="display-title" style="color:#fff">Dupatta</h1><p class="hero-desc">84 styles — silk, cotton &amp; jute silk dupattas with exquisite block prints. From ₹480.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Fabric</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Silk</span><span class="filter-option-count">28</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Cotton</span><span class="filter-option-count">24</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Jute Silk</span><span class="filter-option-count">18</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Chanderi</span><span class="filter-option-count">14</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Under ₹600</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹600 – ₹1,000</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹1,000</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('women')" style="color:var(--muted);text-decoration:none">Women's</a> / Dupatta</span><div class="ps-count" style="margin-top:4px">84 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2023/05/11-768x768-1.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dupatta · Silk</div><div class="prod-name">Kalamkari Silk Dupatta</div><div class="prod-price-row"><span class="prod-price">₹550</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/07/Gemini_Generated_Image_oz7e9coz7e9coz7e-e1768591810204.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dupatta · Cotton</div><div class="prod-name">Indigo Block Cotton Dupatta</div><div class="prod-price-row"><span class="prod-price">₹480</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2023/05/11-768x768-1.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dupatta · Jute Silk</div><div class="prod-name">Teal Jute Silk Dupatta</div><div class="prod-price-row"><span class="prod-original">₹900</span><span class="prod-sale">₹720</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/07/Gemini_Generated_Image_oz7e9coz7e9coz7e-e1768591810204.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dupatta · Chanderi</div><div class="prod-name">Mustard Chanderi Dupatta</div><div class="prod-price-row"><span class="prod-price">₹750</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2023/05/11-768x768-1.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dupatta · Silk</div><div class="prod-name">Rust Floral Silk Dupatta</div><div class="prod-price-row"><span class="prod-price">₹620</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/07/Gemini_Generated_Image_oz7e9coz7e9coz7e-e1768591810204.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dupatta · Cotton</div><div class="prod-name">Navy Geometric Cotton Dupatta</div><div class="prod-price-row"><span class="prod-price">₹520</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WOMEN > COTTON SKIRTS & WRAP AROUNDS (28 products) -->
+<div class="page" id="page-w-skirts">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('women')" style="color:inherit;text-decoration:none">Women's</a> / Cotton Skirts &amp; Wrap Arounds</p><h1 class="display-title" style="color:#fff">Cotton Skirts &amp; Wrap Arounds</h1><p class="hero-desc">28 styles — A-line, tiered, maxi and wrap around skirts in block print cotton.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Style</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">A-Line</span><span class="filter-option-count">8</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Tiered</span><span class="filter-option-count">6</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Maxi</span><span class="filter-option-count">7</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Wrap Around</span><span class="filter-option-count">7</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Under ₹1,000</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹1,000 – ₹2,000</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹2,000</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('women')" style="color:var(--muted);text-decoration:none">Women's</a> / Cotton Skirts &amp; Wrap Arounds</span><div class="ps-count" style="margin-top:4px">28 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Skirt · A-Line</div><div class="prod-name">Floral A-Line Midi Skirt</div><div class="prod-price-row"><span class="prod-price">₹1,100</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/07/Gemini_Generated_Image_oz7e9coz7e9coz7e-e1768591810204.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Skirt · Tiered</div><div class="prod-name">Indigo Tiered Maxi Skirt</div><div class="prod-price-row"><span class="prod-price">₹1,600</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-23-2026-11_12_52-AM-1300x867.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Skirt · Wrap Around</div><div class="prod-name">Rust Kalamkari Wrap Skirt</div><div class="prod-price-row"><span class="prod-original">₹1,800</span><span class="prod-sale">₹1,440</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/01/Gemini_Generated_Image_85n6l85n6l85n6l8-e1772431970271.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Skirt · Maxi</div><div class="prod-name">Teal Block Print Maxi Skirt</div><div class="prod-price-row"><span class="prod-price">₹1,850</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WOMEN > DRESS MATERIAL (48 products) -->
+<div class="page" id="page-w-dressmaterial">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/04/1.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('women')" style="color:inherit;text-decoration:none">Women's</a> / Dress Material</p><h1 class="display-title" style="color:#fff">Dress Material</h1><p class="hero-desc">48 unstitched styles — premium block printed fabrics to stitch your perfect outfit. From ₹2,050.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Fabric</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Chanderi</span><span class="filter-option-count">20</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Cotton</span><span class="filter-option-count">16</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Khadi</span><span class="filter-option-count">8</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Silk</span><span class="filter-option-count">4</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Print Style</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Floral</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Geometric</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Allover Print</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Paisley</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹1,500 – ₹2,000</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹2,000 – ₹3,000</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹3,000</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('women')" style="color:var(--muted);text-decoration:none">Women's</a> / Dress Material</span><div class="ps-count" style="margin-top:4px">48 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option><option>Price: High → Low</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/04/1.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dress Material · Chanderi</div><div class="prod-name">Aartyz Maroon Floral Print</div><div class="prod-price-row"><span class="prod-price">₹2,550</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/8.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dress Material · Khadi</div><div class="prod-name">Aartyz Green Khadi Tulip</div><div class="prod-price-row"><span class="prod-price">₹1,650</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/04/1.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dress Material · Chanderi</div><div class="prod-name">Aartyz Yellow Floral Material</div><div class="prod-price-row"><span class="prod-price">₹2,550</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/04/1.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dress Material · Chanderi</div><div class="prod-name">Aartyz Allover Print Material</div><div class="prod-price-row"><span class="prod-price">₹2,550</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/04/1.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dress Material · Chanderi</div><div class="prod-name">Aartyz Pastel Pink Floral</div><div class="prod-price-row"><span class="prod-price">₹2,550</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/04/1.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dress Material · Chanderi</div><div class="prod-name">Aartyz Grey Chanderi Material</div><div class="prod-price-row"><span class="prod-price">₹2,050</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/04/1.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dress Material · Chanderi</div><div class="prod-name">Pink Floral Dress Material</div><div class="prod-price-row"><span class="prod-price">₹2,550</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/8.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Dress Material · Cotton</div><div class="prod-name">Indigo Floral Cotton Material</div><div class="prod-price-row"><span class="prod-price">₹1,850</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WOMEN > DESIGNER BLOUSE PIECE (13 products) -->
+<div class="page" id="page-w-blouse">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2023/05/11-768x768-1.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('women')" style="color:inherit;text-decoration:none">Women's</a> / Designer Blouse Piece</p><h1 class="display-title" style="color:#fff">Designer Blouse Piece</h1><p class="hero-desc">13 exquisite block printed blouse pieces — complete your saree look in style.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Fabric</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Silk</span><span class="filter-option-count">5</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Chanderi</span><span class="filter-option-count">4</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Brocade</span><span class="filter-option-count">2</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Cotton</span><span class="filter-option-count">2</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Under ₹500</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹500 – ₹1,200</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹1,200</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('women')" style="color:var(--muted);text-decoration:none">Women's</a> / Designer Blouse Piece</span><div class="ps-count" style="margin-top:4px">13 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2023/05/11-768x768-1.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Blouse · Silk</div><div class="prod-name">Kalamkari Silk Blouse Piece</div><div class="prod-price-row"><span class="prod-price">₹850</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/07/Gemini_Generated_Image_oz7e9coz7e9coz7e-e1768591810204.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Blouse · Chanderi</div><div class="prod-name">Floral Chanderi Blouse</div><div class="prod-price-row"><span class="prod-price">₹650</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2023/05/11-768x768-1.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Blouse · Brocade</div><div class="prod-name">Gold Brocade Blouse Piece</div><div class="prod-price-row"><span class="prod-original">₹1,400</span><span class="prod-sale">₹1,120</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/07/Gemini_Generated_Image_oz7e9coz7e9coz7e-e1768591810204.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Blouse · Cotton</div><div class="prod-name">Indigo Block Print Blouse</div><div class="prod-price-row"><span class="prod-price">₹480</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ MEN'S LANDING ═══════════ -->
+<div class="page" id="page-men">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2025/06/Untitled-design-8.jpeg')"></div><div class="section-hero-content wrap"><p class="eyebrow">For Him</p><h1 class="display-title" style="color:#fff">Men's <em style="color:var(--turmeric)">Collection</em></h1><p class="hero-desc">118 styles across shirts, ethnic blazers and Modi jackets — Indian craft for the modern man.</p></div></div>
+  <div style="background:var(--blush);padding:80px 0">
+    <div class="wrap">
+      <p class="eyebrow">Browse Men's</p>
+      <h2 class="display-title" style="margin-bottom:48px">Shop by <em>Category</em></h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('m-shirts')"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-04_14_30-PM.png" alt="All Shirts"><div class="cat-info"><h3 class="cat-name" style="font-size:22px">All Shirts</h3><p class="cat-sub">73 styles · Block Print · Kalamkari</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('m-blockprint')"><img src="https://aartyz.in/wp-content/uploads/2025/11/1.jpg" alt="Block Print Shirts"><div class="cat-info"><h3 class="cat-name" style="font-size:22px">Block Print Shirts</h3><p class="cat-sub">31 styles · Cotton · Khadi · Linen</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('m-kalamkari')"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-04_14_30-PM.png" alt="Kalamkari Shirts"><div class="cat-info"><h3 class="cat-name" style="font-size:22px">Kalamkari Shirts</h3><p class="cat-sub">8 styles · Handpainted Art</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('m-blazers')"><img src="https://aartyz.in/wp-content/uploads/2025/11/1.jpg" alt="Ethnic Blazers"><div class="cat-info"><h3 class="cat-name" style="font-size:22px">Ethnic Blazers</h3><p class="cat-sub">5 styles · Festive · Formal</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('m-jackets')"><img src="https://aartyz.in/wp-content/uploads/2025/11/1.jpg" alt="Modi Jackets"><div class="cat-info"><h3 class="cat-name" style="font-size:22px">Modi Jackets &amp; Vest Coats</h3><p class="cat-sub">22 styles · Khadi · Silk</p></div><div class="cat-btn">↗</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MEN > ALL SHIRTS (73 products) -->
+<div class="page" id="page-m-shirts">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-04_14_30-PM.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('men')" style="color:inherit;text-decoration:none">Men's</a> / Shirts</p><h1 class="display-title" style="color:#fff">Shirts</h1><p class="hero-desc">73 styles — block print, kalamkari &amp; ikat shirts for the man who appreciates Indian craft.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Type</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Block Print</span><span class="filter-option-count">31</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Kalamkari</span><span class="filter-option-count">8</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Ikat</span><span class="filter-option-count">20</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Quirky Print</span><span class="filter-option-count">14</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Fabric</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Cotton</span><span class="filter-option-count">38</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Khadi</span><span class="filter-option-count">20</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Linen</span><span class="filter-option-count">15</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Size</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">36</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">38</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">40</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">42</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">44</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">46</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹850 – ₹1,200</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹1,300 – ₹1,700</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹1,800 – ₹2,500</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹2,500</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('men')" style="color:var(--muted);text-decoration:none">Men's</a> / Shirts</span><div class="ps-count" style="margin-top:4px">73 products</div></div><select class="ps-sort"><option>Best Sellers</option><option>Newest First</option><option>Price: Low → High</option><option>Price: High → Low</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-04_14_30-PM.png" alt=""><div class="prod-badge badge-new">Best Seller</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Shirt · Block Print · Cotton</div><div class="prod-name">Aartyz Maroon Block Print Shirt</div><div class="prod-price-row"><span class="prod-price">₹1,650</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/11/1.jpg" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Shirt · Ikat · Cotton</div><div class="prod-name">Aartyz White Ikat Shirt</div><div class="prod-price-row"><span class="prod-price">₹1,250</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-04_14_30-PM.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Shirt · Quirky Print · Khadi</div><div class="prod-name">Aartyz Quirky Print Shirt</div><div class="prod-price-row"><span class="prod-price">₹1,250</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/11/1.jpg" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Shirt · Kalamkari · Cotton</div><div class="prod-name">Aartyz Kalamkari Paisley Shirt</div><div class="prod-price-row"><span class="prod-price">₹1,299</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-04_14_30-PM.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Shirt · Ikat · Khadi</div><div class="prod-name">Olive Green Ikat Slim Fit Shirt</div><div class="prod-price-row"><span class="prod-price">₹1,250</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/11/1.jpg" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Shirt · Block Print · Linen</div><div class="prod-name">Rust Paisley Linen Shirt</div><div class="prod-price-row"><span class="prod-original">₹2,200</span><span class="prod-sale">₹1,760</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-04_14_30-PM.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Shirt · Block Print · Cotton</div><div class="prod-name">Teal Geometric Cotton Shirt</div><div class="prod-price-row"><span class="prod-price">₹1,650</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/11/1.jpg" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Shirt · Ikat · Cotton</div><div class="prod-name">Navy Blue Ikat Shirt</div><div class="prod-price-row"><span class="prod-price">₹1,250</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MEN > BLOCK PRINT SHIRTS (31 products) -->
+<div class="page" id="page-m-blockprint">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2025/11/1.jpg')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('men')" style="color:inherit;text-decoration:none">Men's</a> / Shirts / Block Print</p><h1 class="display-title" style="color:#fff">Block Print Shirts</h1><p class="hero-desc">31 styles — handcrafted block print shirts in cotton, khadi &amp; linen.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Fabric</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Cotton</span><span class="filter-option-count">16</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Khadi</span><span class="filter-option-count">10</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Linen</span><span class="filter-option-count">5</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Size</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">36</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">38</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">40</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">42</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">44</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">46</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹850 – ₹1,200</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹1,200 – ₹1,700</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹1,700</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('men')" style="color:var(--muted);text-decoration:none">Men's</a> / <a href="#" onclick="go('m-shirts')" style="color:var(--muted);text-decoration:none">Shirts</a> / Block Print</span><div class="ps-count" style="margin-top:4px">31 products</div></div><select class="ps-sort"><option>Best Sellers</option><option>Newest First</option><option>Price: Low → High</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/11/1.jpg" alt=""><div class="prod-badge badge-new">Best Seller</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Shirt · Cotton</div><div class="prod-name">Aartyz Maroon Block Print Shirt</div><div class="prod-price-row"><span class="prod-price">₹1,650</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-04_14_30-PM.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Shirt · Khadi</div><div class="prod-name">Indigo Floral Khadi Shirt</div><div class="prod-price-row"><span class="prod-price">₹1,450</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/11/1.jpg" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Shirt · Linen</div><div class="prod-name">Rust Paisley Linen Block Shirt</div><div class="prod-price-row"><span class="prod-original">₹2,200</span><span class="prod-sale">₹1,760</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-04_14_30-PM.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Shirt · Cotton</div><div class="prod-name">Teal Geometric Block Shirt</div><div class="prod-price-row"><span class="prod-price">₹1,650</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MEN > KALAMKARI SHIRTS (8 products) -->
+<div class="page" id="page-m-kalamkari">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-04_14_30-PM.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('men')" style="color:inherit;text-decoration:none">Men's</a> / Shirts / Kalamkari</p><h1 class="display-title" style="color:#fff">Kalamkari Shirts</h1><p class="hero-desc">8 styles — handpainted kalamkari art on premium cotton shirts.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Print Motif</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Paisley</span><span class="filter-option-count">3</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Floral</span><span class="filter-option-count">3</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Geometric</span><span class="filter-option-count">2</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹1,200 – ₹1,500</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹1,500 – ₹2,000</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('men')" style="color:var(--muted);text-decoration:none">Men's</a> / <a href="#" onclick="go('m-shirts')" style="color:var(--muted);text-decoration:none">Shirts</a> / Kalamkari</span><div class="ps-count" style="margin-top:4px">8 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-04_14_30-PM.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Kalamkari · Cotton</div><div class="prod-name">Aartyz Kalamkari Paisley Shirt</div><div class="prod-price-row"><span class="prod-price">₹1,299</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/11/1.jpg" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Kalamkari · Cotton</div><div class="prod-name">Kalamkari Floral Cotton Shirt</div><div class="prod-price-row"><span class="prod-price">₹1,450</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-04_14_30-PM.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Kalamkari · Cotton</div><div class="prod-name">Kalamkari Geometric Shirt</div><div class="prod-price-row"><span class="prod-original">₹1,650</span><span class="prod-sale">₹1,320</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/11/1.jpg" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Kalamkari · Cotton</div><div class="prod-name">Deep Blue Kalamkari Shirt</div><div class="prod-price-row"><span class="prod-price">₹1,350</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MEN > ETHNIC BLAZERS (5 products) -->
+<div class="page" id="page-m-blazers">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2025/11/1.jpg')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('men')" style="color:inherit;text-decoration:none">Men's</a> / Ethnic Blazers</p><h1 class="display-title" style="color:#fff">Ethnic Blazers</h1><p class="hero-desc">5 premium block print ethnic blazers — dress to impress at every festive occasion.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Fabric</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Chanderi</span><span class="filter-option-count">2</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Silk</span><span class="filter-option-count">2</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Cotton</span><span class="filter-option-count">1</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Occasion</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Wedding</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Festival</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Formal</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('men')" style="color:var(--muted);text-decoration:none">Men's</a> / Ethnic Blazers</span><div class="ps-count" style="margin-top:4px">5 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option></select></div>
+      <div class="prod-grid" style="grid-template-columns:repeat(3,1fr)">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/11/1.jpg" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Blazer · Chanderi</div><div class="prod-name">Indigo Block Print Ethnic Blazer</div><div class="prod-price-row"><span class="prod-price">₹4,200</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-04_14_30-PM.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Blazer · Silk</div><div class="prod-name">Rust Kalamkari Silk Blazer</div><div class="prod-price-row"><span class="prod-price">₹5,200</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/11/1.jpg" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Blazer · Chanderi</div><div class="prod-name">Teal Block Print Blazer</div><div class="prod-price-row"><span class="prod-price">₹4,600</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MEN > MODI JACKETS & VEST COATS (22 products) -->
+<div class="page" id="page-m-jackets">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2025/11/1.jpg')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('men')" style="color:inherit;text-decoration:none">Men's</a> / Modi Jackets &amp; Vest Coats</p><h1 class="display-title" style="color:#fff">Modi Jackets &amp; Vest Coats</h1><p class="hero-desc">22 styles — statement block print jackets for festivals, weddings and special occasions.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Type</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Modi Jacket</span><span class="filter-option-count">12</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Nehru Vest Coat</span><span class="filter-option-count">6</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Waistcoat</span><span class="filter-option-count">4</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Fabric</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Khadi</span><span class="filter-option-count">10</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Silk</span><span class="filter-option-count">8</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Cotton</span><span class="filter-option-count">4</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Under ₹2,000</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹2,000 – ₹3,500</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹3,500</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('men')" style="color:var(--muted);text-decoration:none">Men's</a> / Modi Jackets &amp; Vest Coats</span><div class="ps-count" style="margin-top:4px">22 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/11/1.jpg" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Modi Jacket · Khadi</div><div class="prod-name">Block Print Modi Jacket</div><div class="prod-price-row"><span class="prod-price">₹2,800</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-04_14_30-PM.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Nehru Vest · Silk</div><div class="prod-name">Kalamkari Nehru Vest</div><div class="prod-price-row"><span class="prod-original">₹3,200</span><span class="prod-sale">₹2,560</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2025/11/1.jpg" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Waistcoat · Cotton</div><div class="prod-name">Indigo Block Waistcoat</div><div class="prod-price-row"><span class="prod-price">₹1,800</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-04_14_30-PM.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Modi Jacket · Silk</div><div class="prod-name">Festival Silk Modi Jacket</div><div class="prod-price-row"><span class="prod-price">₹3,600</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ HOME DECOR LANDING ═══════════ -->
+<div class="page" id="page-decor">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png')"></div><div class="section-hero-content wrap"><p class="eyebrow">For Your Home</p><h1 class="display-title" style="color:#fff">Home <em style="color:var(--turmeric)">Decor</em></h1><p class="hero-desc">206+ block printed pieces across 7 categories — bring artisan craft into every corner.</p></div></div>
+  <div style="background:var(--blush);padding:80px 0">
+    <div class="wrap">
+      <p class="eyebrow">Browse Home Decor</p>
+      <h2 class="display-title" style="margin-bottom:48px">Shop by <em>Category</em></h2>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('d-bedsheets')"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt="Bedsheets"><div class="cat-info"><h3 class="cat-name" style="font-size:20px">Bedsheets</h3><p class="cat-sub">50 styles · Single · Double · King</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('d-pillow')"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt="Pillow Covers"><div class="cat-info"><h3 class="cat-name" style="font-size:20px">Pillow Covers</h3><p class="cat-sub">Block Print Sets</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('d-cushion')"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt="Cushion Covers"><div class="cat-info"><h3 class="cat-name" style="font-size:20px">Cushion Covers</h3><p class="cat-sub">40 styles · Sets of 5</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('d-dining')"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt="Dining Table Covers"><div class="cat-info"><h3 class="cat-name" style="font-size:20px">Dining Table Covers</h3><p class="cat-sub">4, 6 &amp; 8 Seater</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('d-tablemats')"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt="Table Mats"><div class="cat-info"><h3 class="cat-name" style="font-size:20px">Table Mats &amp; Runners</h3><p class="cat-sub">14 styles · Cotton · Khadi</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('d-curtains')"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt="Curtains"><div class="cat-info"><h3 class="cat-name" style="font-size:20px">Curtains</h3><p class="cat-sub">15 styles · Cotton · Sheer</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:3/4;cursor:pointer" onclick="go('d-runners')"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt="Runners"><div class="cat-info"><h3 class="cat-name" style="font-size:20px">Runners</h3><p class="cat-sub">Table · Bed · Hallway</p></div><div class="cat-btn">↗</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DECOR > BEDSHEETS (50 products) -->
+<div class="page" id="page-d-bedsheets">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('decor')" style="color:inherit;text-decoration:none">Home Decor</a> / Bedsheets</p><h1 class="display-title" style="color:#fff">Bedsheets</h1><p class="hero-desc">50 block printed styles — single, double and king sizes. Sleep in artistry.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Size</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Single</span><span class="filter-option-count">14</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Double</span><span class="filter-option-count">22</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">King</span><span class="filter-option-count">14</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Includes</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Bedsheet Only</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">With Pillow Covers</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹1,500 – ₹2,500</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹2,500 – ₹4,000</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹4,000</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('decor')" style="color:var(--muted);text-decoration:none">Home Decor</a> / Bedsheets</span><div class="ps-count" style="margin-top:4px">50 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Bedsheet · King + Pillow Covers</div><div class="prod-name">Timeless Artistry Sanctuary Set</div><div class="prod-price-row"><span class="prod-price">₹2,850</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Bedsheet · Double</div><div class="prod-name">Indigo Floral Bedsheet</div><div class="prod-price-row"><span class="prod-price">₹2,100</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Bedsheet · Single</div><div class="prod-name">Rust Kalamkari Bedsheet</div><div class="prod-price-row"><span class="prod-original">₹1,800</span><span class="prod-sale">₹1,440</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Bedsheet · King + Pillow Covers</div><div class="prod-name">Teal Geometric King Set</div><div class="prod-price-row"><span class="prod-price">₹3,400</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DECOR > PILLOW COVERS -->
+<div class="page" id="page-d-pillow">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('decor')" style="color:inherit;text-decoration:none">Home Decor</a> / Pillow Covers</p><h1 class="display-title" style="color:#fff">Pillow Covers</h1><p class="hero-desc">Block printed pillow covers — add artisan touch to your bedroom.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Size</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Standard (18"×28")</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">King (20"×36")</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Pack</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Set of 2</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Set of 4</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Under ₹600</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹600 – ₹1,200</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('decor')" style="color:var(--muted);text-decoration:none">Home Decor</a> / Pillow Covers</span><div class="ps-count" style="margin-top:4px">18 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Pillow Cover · Set of 2</div><div class="prod-name">Indigo Block Pillow Set</div><div class="prod-price-row"><span class="prod-price">₹480</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Pillow Cover · Set of 4</div><div class="prod-name">Floral Block Pillow Set</div><div class="prod-price-row"><span class="prod-price">₹880</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Pillow Cover · Set of 2</div><div class="prod-name">Rust Paisley Pillow Set</div><div class="prod-price-row"><span class="prod-original">₹550</span><span class="prod-sale">₹440</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Pillow Cover · King · Set of 2</div><div class="prod-name">Geometric King Pillow Set</div><div class="prod-price-row"><span class="prod-price">₹620</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DECOR > CUSHION COVERS (40 products) -->
+<div class="page" id="page-d-cushion">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('decor')" style="color:inherit;text-decoration:none">Home Decor</a> / Cushion Covers</p><h1 class="display-title" style="color:#fff">Cushion Covers</h1><p class="hero-desc">40 styles of block printed cushion covers — sets of 5 to perfectly coordinate your living room.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Pack</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Set of 2</span><span class="filter-option-count">10</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Set of 5</span><span class="filter-option-count">20</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Single</span><span class="filter-option-count">10</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Under ₹800</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹800 – ₹1,500</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹1,500</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('decor')" style="color:var(--muted);text-decoration:none">Home Decor</a> / Cushion Covers</span><div class="ps-count" style="margin-top:4px">40 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Cushion Cover · Set of 5</div><div class="prod-name">Indigo Block Cushion Set</div><div class="prod-price-row"><span class="prod-price">₹1,200</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Cushion Cover · Set of 2</div><div class="prod-name">Floral Block Cushion Set</div><div class="prod-price-row"><span class="prod-price">₹580</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Cushion Cover · Set of 5</div><div class="prod-name">Rust Geometric Cushion Set</div><div class="prod-price-row"><span class="prod-original">₹1,400</span><span class="prod-sale">₹1,120</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Cushion Cover · Set of 5</div><div class="prod-name">Teal Paisley Cushion Set</div><div class="prod-price-row"><span class="prod-price">₹1,300</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DECOR > DINING TABLE COVERS -->
+<div class="page" id="page-d-dining">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('decor')" style="color:inherit;text-decoration:none">Home Decor</a> / Dining Table Covers</p><h1 class="display-title" style="color:#fff">Dining Table Covers</h1><p class="hero-desc">Elevate every meal with hand block printed table covers — 4, 6 and 8 seater.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Seating</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">4 Seater</span><span class="filter-option-count">5</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">6 Seater</span><span class="filter-option-count">7</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">8 Seater</span><span class="filter-option-count">5</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Under ₹1,000</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹1,000 – ₹2,000</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹2,000</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('decor')" style="color:var(--muted);text-decoration:none">Home Decor</a> / Dining Table Covers</span><div class="ps-count" style="margin-top:4px">17 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Table Cover · 6 Seater</div><div class="prod-name">Indigo Floral Table Cover</div><div class="prod-price-row"><span class="prod-price">₹1,400</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Table Cover · 4 Seater</div><div class="prod-name">Rust Block Print Table Cover</div><div class="prod-price-row"><span class="prod-price">₹980</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Table Cover · 8 Seater</div><div class="prod-name">Teal Kalamkari Table Cover</div><div class="prod-price-row"><span class="prod-original">₹2,200</span><span class="prod-sale">₹1,760</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Table Cover · 6 Seater</div><div class="prod-name">Paisley Cotton Table Cover</div><div class="prod-price-row"><span class="prod-price">₹1,350</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DECOR > TABLE MATS & RUNNERS (14 products) -->
+<div class="page" id="page-d-tablemats">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('decor')" style="color:inherit;text-decoration:none">Home Decor</a> / Table Mats &amp; Runners</p><h1 class="display-title" style="color:#fff">Table Mats &amp; Runners</h1><p class="hero-desc">14 styles of handcrafted block print table mats and runners.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Type</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Table Mats (Set of 6)</span><span class="filter-option-count">6</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Table Runner</span><span class="filter-option-count">5</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Mat + Runner Combo</span><span class="filter-option-count">3</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Under ₹700</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹700 – ₹1,500</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹1,500</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('decor')" style="color:var(--muted);text-decoration:none">Home Decor</a> / Table Mats &amp; Runners</span><div class="ps-count" style="margin-top:4px">14 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Table Runner · Cotton</div><div class="prod-name">Indigo Festive Table Runner</div><div class="prod-price-row"><span class="prod-price">₹680</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Table Mats · Set of 6</div><div class="prod-name">Floral Block Mat Set</div><div class="prod-price-row"><span class="prod-price">₹950</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Mat + Runner Combo</div><div class="prod-name">Rust Kalamkari Combo Set</div><div class="prod-price-row"><span class="prod-original">₹1,600</span><span class="prod-sale">₹1,280</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Table Runner · Khadi</div><div class="prod-name">Geometric Khadi Runner</div><div class="prod-price-row"><span class="prod-price">₹750</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DECOR > CURTAINS (15 products) -->
+<div class="page" id="page-d-curtains">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('decor')" style="color:inherit;text-decoration:none">Home Decor</a> / Curtains</p><h1 class="display-title" style="color:#fff">Curtains</h1><p class="hero-desc">15 styles of block printed cotton curtains — sold in pairs. 5 ft, 7 ft and 9 ft.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Length</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">5 ft</span><span class="filter-option-count">4</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">7 ft</span><span class="filter-option-count">6</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">9 ft</span><span class="filter-option-count">5</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price (Per Pair)</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Under ₹1,500</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹1,500 – ₹3,000</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹3,000</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('decor')" style="color:var(--muted);text-decoration:none">Home Decor</a> / Curtains</span><div class="ps-count" style="margin-top:4px">15 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Curtain Pair · 7 ft</div><div class="prod-name">Indigo Block Print Curtains</div><div class="prod-price-row"><span class="prod-price">₹2,200</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Curtain Pair · 5 ft</div><div class="prod-name">Rust Floral Window Curtains</div><div class="prod-price-row"><span class="prod-price">₹1,600</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Curtain Pair · 9 ft</div><div class="prod-name">Teal Kalamkari Door Curtains</div><div class="prod-price-row"><span class="prod-original">₹3,200</span><span class="prod-sale">₹2,560</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Curtain Pair · 7 ft</div><div class="prod-name">Mustard Paisley Curtains</div><div class="prod-price-row"><span class="prod-price">₹2,400</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DECOR > RUNNERS -->
+<div class="page" id="page-d-runners">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('decor')" style="color:inherit;text-decoration:none">Home Decor</a> / Runners</p><h1 class="display-title" style="color:#fff">Runners</h1><p class="hero-desc">Block printed runners for your table, bed and hallway — artisan character everywhere.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Type</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Table Runner</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Bed Runner</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Hallway Runner</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Under ₹600</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹600 – ₹1,200</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹1,200</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('decor')" style="color:var(--muted);text-decoration:none">Home Decor</a> / Runners</span><div class="ps-count" style="margin-top:4px">18 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option></select></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Table Runner · Cotton</div><div class="prod-name">Indigo Geometric Table Runner</div><div class="prod-price-row"><span class="prod-price">₹680</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Bed Runner · Khadi</div><div class="prod-name">Floral Khadi Bed Runner</div><div class="prod-price-row"><span class="prod-price">₹950</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Hallway Runner · Cotton</div><div class="prod-name">Rust Paisley Hallway Runner</div><div class="prod-price-row"><span class="prod-original">₹1,400</span><span class="prod-sale">₹1,120</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Table Runner · Khadi</div><div class="prod-name">Teal Block Print Runner</div><div class="prod-price-row"><span class="prod-price">₹720</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ CORPORATE GIFTING LANDING ═══════════ -->
+<div class="page" id="page-gifting">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-03_49_40-PM.png')"></div><div class="section-hero-content wrap"><p class="eyebrow">For Your Brand</p><h1 class="display-title" style="color:#fff">Corporate <em style="color:var(--turmeric)">Gifting</em></h1><p class="hero-desc">Thoughtful handcrafted gifts your team, clients &amp; partners will remember. Bulk orders from 25 units.</p></div></div>
+  <div style="background:var(--blush);padding:80px 0">
+    <div class="wrap">
+      <p class="eyebrow">Browse Corporate Gifting</p>
+      <h2 class="display-title" style="margin-bottom:48px">Shop by <em>Category</em></h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+        <div class="cat-tile" style="aspect-ratio:4/3;cursor:pointer" onclick="go('g-minipouch')"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-03_49_40-PM.png" alt="Mini Pouch"><div class="cat-info"><h3 class="cat-name" style="font-size:22px">Mini Pouch</h3><p class="cat-sub">Drawstring · Zipper · Custom Branded</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:4/3;cursor:pointer" onclick="go('g-planter')"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt="Planter Covers"><div class="cat-info"><h3 class="cat-name" style="font-size:22px">Planter Covers</h3><p class="cat-sub">Block Print · Various Sizes</p></div><div class="cat-btn">↗</div></div>
+        <div class="cat-tile" style="aspect-ratio:4/3;cursor:pointer" onclick="go('g-coasters')"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-03_49_40-PM.png" alt="Fabric Coasters"><div class="cat-info"><h3 class="cat-name" style="font-size:22px">Fabric Coasters</h3><p class="cat-sub">5 styles · Block Print Sets</p></div><div class="cat-btn">↗</div></div>
+      </div>
+      <div style="margin-top:60px;background:var(--earth);padding:52px;display:flex;justify-content:space-between;align-items:center;gap:40px;flex-wrap:wrap">
+        <div><h3 style="font-family:var(--ff-display);font-size:28px;color:var(--blush);margin-bottom:8px">Custom Bulk Orders</h3><p style="font-size:14px;color:rgba(255,255,255,.55);max-width:460px">From 25 to 10,000+ units. Custom logo block printing, bulk pricing, pan-India delivery.</p></div>
+        <button class="btn-fill" onclick="go('mto')"><span>Request a Quote →</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GIFTING > MINI POUCH -->
+<div class="page" id="page-g-minipouch">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-03_49_40-PM.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('gifting')" style="color:inherit;text-decoration:none">Corporate Gifting</a> / Mini Pouch</p><h1 class="display-title" style="color:#fff">Mini Pouch</h1><p class="hero-desc">Charming block printed pouches — drawstring and zipper styles for bulk gifting.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Style</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Drawstring Pouch</span><span class="filter-option-count">8</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Zipper Pouch</span><span class="filter-option-count">6</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Min. Order</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Single Piece</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">25 Units</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">100+ Units</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">500+ Units</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price (Per Unit)</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Under ₹200</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹200 – ₹400</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹400</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('gifting')" style="color:var(--muted);text-decoration:none">Corporate Gifting</a> / Mini Pouch</span><div class="ps-count" style="margin-top:4px">14 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option></select></div>
+      <div style="background:var(--blush);border-left:3px solid var(--saffron);padding:16px 20px;margin-bottom:28px;font-size:13px;color:var(--muted)">💡 All pouches available with custom logo block printing. <a href="#" onclick="go('contact')" style="color:var(--saffron)">Contact us for bulk pricing →</a></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-03_49_40-PM.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Drawstring · Small</div><div class="prod-name">Indigo Block Drawstring Pouch</div><div class="prod-price-row"><span class="prod-price">₹180 <span style="font-size:10px;color:var(--muted)">per unit</span></span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-03_49_40-PM.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Zipper · Medium</div><div class="prod-name">Floral Zipper Pouch</div><div class="prod-price-row"><span class="prod-price">₹280 <span style="font-size:10px;color:var(--muted)">per unit</span></span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-03_49_40-PM.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Drawstring · Medium</div><div class="prod-name">Rust Kalamkari Pouch</div><div class="prod-price-row"><span class="prod-original">₹240</span><span class="prod-sale">₹192</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-03_49_40-PM.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Zipper · Large</div><div class="prod-name">Teal Block Zipper Pouch</div><div class="prod-price-row"><span class="prod-price">₹380 <span style="font-size:10px;color:var(--muted)">per unit</span></span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GIFTING > PLANTER COVERS -->
+<div class="page" id="page-g-planter">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('gifting')" style="color:inherit;text-decoration:none">Corporate Gifting</a> / Planter Covers</p><h1 class="display-title" style="color:#fff">Planter Covers</h1><p class="hero-desc">Hand block printed planter covers — a unique, memorable gifting choice.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Size</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Small (4"–6")</span><span class="filter-option-count">6</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Medium (6"–10")</span><span class="filter-option-count">8</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Large (10"+)</span><span class="filter-option-count">4</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price (Per Unit)</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Under ₹250</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹250 – ₹500</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Above ₹500</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('gifting')" style="color:var(--muted);text-decoration:none">Corporate Gifting</a> / Planter Covers</span><div class="ps-count" style="margin-top:4px">18 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option></select></div>
+      <div style="background:var(--blush);border-left:3px solid var(--saffron);padding:16px 20px;margin-bottom:28px;font-size:13px;color:var(--muted)">💡 Custom logo &amp; colour options for bulk orders of 25+. <a href="#" onclick="go('contact')" style="color:var(--saffron)">Get a quote →</a></div>
+      <div class="prod-grid">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Planter Cover · Small</div><div class="prod-name">Indigo Block Planter Cover</div><div class="prod-price-row"><span class="prod-price">₹220</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Planter Cover · Medium</div><div class="prod-name">Floral Block Planter Cover</div><div class="prod-price-row"><span class="prod-price">₹340</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-sale">Sale</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Planter Cover · Large</div><div class="prod-name">Rust Kalamkari Planter Cover</div><div class="prod-price-row"><span class="prod-original">₹580</span><span class="prod-sale">₹464</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/Gemini_Generated_Image_xbehgsxbehgsxbeh-e1772440516640.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Planter Cover · Medium</div><div class="prod-name">Teal Geometric Planter Cover</div><div class="prod-price-row"><span class="prod-price">₹380</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GIFTING > FABRIC COASTERS (5 products) -->
+<div class="page" id="page-g-coasters">
+  <div class="section-hero"><div class="section-hero-img" style="background-image:url('https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-03_49_40-PM.png')"></div><div class="section-hero-content wrap"><p class="eyebrow"><a href="#" onclick="go('gifting')" style="color:inherit;text-decoration:none">Corporate Gifting</a> / Fabric Coasters</p><h1 class="display-title" style="color:#fff">Fabric Coasters</h1><p class="hero-desc">Charming block printed fabric coasters — ideal desk gifting and festive hamper inserts.</p></div></div>
+  <div class="ps-layout">
+    <div class="ps-sidebar">
+      <div class="sidebar-title">Filter</div>
+      <div class="filter-group"><div class="filter-group-title">Pack</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Set of 4</span><span class="filter-option-count">3</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Set of 6</span><span class="filter-option-count">2</span></label>
+      </div>
+      <div class="filter-group"><div class="filter-group-title">Price (Per Set)</div>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">Under ₹400</span></label>
+        <label class="filter-option"><input type="checkbox"><span class="filter-option-label">₹400 – ₹700</span></label>
+      </div>
+    </div>
+    <div class="ps-main">
+      <div class="ps-header"><div><span style="font-size:12px;color:var(--muted)"><a href="#" onclick="go('gifting')" style="color:var(--muted);text-decoration:none">Corporate Gifting</a> / Fabric Coasters</span><div class="ps-count" style="margin-top:4px">5 products</div></div><select class="ps-sort"><option>Newest First</option><option>Price: Low → High</option></select></div>
+      <div style="background:var(--blush);border-left:3px solid var(--saffron);padding:16px 20px;margin-bottom:28px;font-size:13px;color:var(--muted)">💡 Custom printed coasters available for bulk orders. Perfect for desk gifting &amp; hampers. <a href="#" onclick="go('contact')" style="color:var(--saffron)">Enquire →</a></div>
+      <div class="prod-grid" style="grid-template-columns:repeat(3,1fr)">
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-03_49_40-PM.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Coasters · Set of 4</div><div class="prod-name">Indigo Block Coaster Set</div><div class="prod-price-row"><span class="prod-price">₹320</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-03_49_40-PM.png" alt=""><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Coasters · Set of 6</div><div class="prod-name">Floral Block Coaster Set</div><div class="prod-price-row"><span class="prod-price">₹480</span></div></div></div>
+        <div class="prod-card"><div class="prod-img-wrap"><img src="https://aartyz.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-22-2026-03_49_40-PM.png" alt=""><div class="prod-badge badge-new">New</div><button class="prod-wish">♡</button><div class="prod-img-hover"><button class="prod-add-btn" onclick="addCart()">Add to Cart</button></div></div><div class="prod-meta"><div class="prod-cat">Coasters · Set of 4</div><div class="prod-name">Rust Kalamkari Coaster Set</div><div class="prod-price-row"><span class="prod-price">₹360</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand-logo" href="#" onclick="go('home')">a<em>ART</em>yz</a>
+        <p class="footer-tagline">Indian ethnic hand block printed textiles, crafted with love and intention by skilled women artisans in Nagpur, Maharashtra.</p>
+        <div class="socials">
+          <a class="soc-btn" href="#">f</a>
+          <a class="soc-btn" href="#">✦</a>
+          <a class="soc-btn" href="#">📌</a>
+          <a class="soc-btn" href="#">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Discover</h5>
+        <ul>
+          <li><a href="#" onclick="go('women')">Women's</a></li>
+          <li><a href="#" onclick="go('men')">Men's</a></li>
+          <li><a href="#" onclick="go('decor')">Home Decor</a></li>
+          <li><a href="#" onclick="go('gifting')">Corporate Gifting</a></li>
+          <li><a href="#" onclick="go('newarrivals')">New Arrivals</a></li>
+          <li><a href="#" onclick="go('sale')" style="color:var(--saffron)">Sale</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="#" onclick="go('about')">Our Story</a></li>
+          <li><a href="#" onclick="go('about')">The Founder</a></li>
+          <li><a href="#" onclick="go('contact')">Contact Us</a></li>
+          <li><a href="#" onclick="go('mto')">Made to Order</a></li>
+          <li><a href="#" onclick="go('gifting')">Partner With Us</a></li>
+          <li><a href="#" onclick="go('cart')">Track Order</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Returns Policy</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Aartyz. All Rights Reserved. Made with ♡ in Nagpur.</span>
+      <div class="pay-row">
+        <span class="pay-chip">UPI</span>
+        <span class="pay-chip">VISA</span>
+        <span class="pay-chip">MC</span>
+        <span class="pay-chip">RuPay</span>
+        <span class="pay-chip">COD</span>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
