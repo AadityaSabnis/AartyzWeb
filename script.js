@@ -188,17 +188,6 @@ function renderAndUpdate(pageEl, pageId, limit = 24) {
     more.onclick = () => renderAndUpdate(pageEl, pageId, limit + 24);
     grid.appendChild(more);
   }
-
-  // Stagger-reveal newly injected cards
-  grid.querySelectorAll('.prod-card').forEach((el, i) => {
-    el.style.opacity   = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition= `opacity .4s ease ${i * 35}ms, transform .4s ease ${i * 35}ms`;
-    requestAnimationFrame(() => {
-      el.style.opacity   = '1';
-      el.style.transform = 'translateY(0)';
-    });
-  });
 }
 
 function cardHTML(p) {
@@ -398,25 +387,6 @@ document.addEventListener('keydown', event => {
 });
 compactHeader.addEventListener('change', () => { setHeaderMenu(null); closeMob(); });
 
-const ANIMATE_CLASSES = '.feat-item,.testi-card,.p-step,.cat-tile,.value-item,.gift-perk,.bundle-card,.care-item,.mto-step';
-
-const observer = new IntersectionObserver(
-  entries => entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.style.opacity = '1';
-      e.target.style.transform = 'translateY(0)';
-    }
-  }),
-  { threshold: 0.1 }
-);
-
-document.querySelectorAll(ANIMATE_CLASSES).forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(30px)';
-  el.style.transition = 'opacity .65s ease, transform .65s ease';
-  observer.observe(el);
-});
-
 let _currentPage = null;
 
 let restoringLocation = false;
@@ -471,7 +441,6 @@ function go(page, options = {}) {
   _currentPage = page;
   document.querySelectorAll('.aartyz-page').forEach(p => { p.style.setProperty('display', 'none', 'important'); p.classList.remove('active'); });
   target.style.setProperty('display', 'block', 'important'); target.classList.add('active');
-  target.querySelectorAll(ANIMATE_CLASSES).forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(30px)'; el.style.transition = 'opacity .65s ease, transform .65s ease'; observer.observe(el); });
   window.scrollTo({top:0, behavior:'instant'});
   if (PAGE_DEFAULTS[page] !== undefined) initPageFilters(target, page);
   if (page === 'cart') { renderCart(); refreshCart(); }
